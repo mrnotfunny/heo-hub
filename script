@@ -1,0 +1,1722 @@
+--shit done by callmexdrop#2505
+
+local v0 = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Rayfield/main/source"))()
+v0:Notify(
+    {
+        Title = "Notification",
+        Content = "Loading...",
+        Duration = 5.5 + 1,
+        Image = 4483362458,
+        Actions = {Ignore = {Name = "Okay!", Callback = function()
+                    print("The user tapped Okay!")
+                end}}
+    }
+)
+
+--call of this is for the key change it or remove it
+local v1 =
+    v0:CreateWindow(
+    {
+        Name = "Heo Hub V3.6",
+        LoadingTitle = "Heo Hub",
+        LoadingSubtitle = "Aided by Sirius",
+        ConfigurationSaving = {Enabled = true, FolderName = nil, FileName = "Big Hub"},
+        Discord = {Enabled = true, Invite = "CVTdeGY7gD", RememberJoins = false},
+        KeySystem = true,
+        KeySettings = {
+            Title = "Heo Hub",
+            Subtitle = "Key System",
+            Note = "Key is in the discord server, In 🔑Key system🔑 tab",
+            FileName = "SiriusKey",
+            SaveKey = false,
+            GrabKeyFromSite = true,
+            Key = "https://pastebin.com/raw/ZNH5zAFx"
+        }
+    }
+)
+--end of the key
+
+local v2 = v1:CreateTab("Welcome", 4483362458 - 0)
+local v3 = v1:CreateTab("FE Scripts", 4483362458)
+local v4 = v1:CreateTab("Local Scripts", 4483362691 - (96 + 137))
+local v5 = v1:CreateTab("Scripts", 4483363094 - (545 + 91))
+local v6 = v2:CreateSection("Introduction")
+local v7 =
+    v2:CreateParagraph(
+    {
+        Title = "What is HeoHub?",
+        Content = "Heo Hub is  a brand new Hub for roblox which was founded on 3/28/2023 by Clamtour. This hub uses Sirius's library to present this clean asl ui. Big thanks to Kenfy for showcasing this hub and making it known, Most fe scripts are made by clamtour or a friend of mine but some are from other creators, I try to put a notifacation for their rightful owners when you launch the script cracked by callmexdrop#2505."
+    }
+)
+local v7 =
+    v2:CreateParagraph(
+    {
+        Title = "Help",
+        Content = "If you need support, The discord server should be automatically launched when you execute the script. Key system support will also be held in the discord server"
+    }
+)
+local v7 =
+    v3:CreateParagraph(
+    {
+        Title = "READ ME",
+        Content = "Every FE Script require 5 specific free hats in order to use. These hats will be listed in the discord server under the BODY HATS channel"
+    }
+)
+local v6 = v3:CreateSection("Requires hats")
+local v8 =
+    v3:CreateButton(
+    {Name = "Potato", Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/Krxh2huW"))()
+        end}
+)
+local v8 =
+    v3:CreateButton(
+    {Name = "Reaper", Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/AJiTjX6z"))()
+        end}
+)
+local v8 =
+    v3:CreateButton(
+    {Name = "Abyss BROKEN", Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/d5KHypNN"))()
+        end}
+)
+local v8 =
+    v3:CreateButton(
+    {Name = "Long Sword", Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/jNExAaW9"))()
+        end}
+)
+local v8 =
+    v3:CreateButton(
+    {Name = "Scythe", Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/nqdvAyaj"))()
+        end}
+)
+local v8 =
+    v3:CreateButton(
+    {Name = "Sword", Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/JPmv4Wnk"))()
+        end}
+)
+local v8 =
+    v3:CreateButton(
+    {
+        Name = "Might Guy",
+        Callback = function()
+            local v10 = 0 - 0
+            while true do
+                if ((0 - 0) == v10) then
+                    loadstring(game:HttpGet("https://pastebin.com/raw/xNm53mZi"))()
+                    v0:Notify(
+                        {
+                            Title = "Notification",
+                            Content = "Made By: KingAbsalom ",
+                            Duration = 6.5,
+                            Image = 4483364073 - (220 + 1395),
+                            Actions = {Ignore = {Name = "Okay!", Callback = function()
+                                        print("The user tapped Okay!")
+                                    end}}
+                        }
+                    )
+                    break
+                end
+            end
+        end
+    }
+)
+local v8 =
+    v3:CreateButton(
+    {Name = "Melons Star Glitcher", Callback = function()
+            loadstring(game:HttpGet("https://paste.ee/r/q9PT4/0"))()
+        end}
+)
+local v8 =
+    v3:CreateButton(
+    {Name = "Cube by maxilito", Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/wBJfNF7y"))()
+        end}
+)
+local v8 =
+    v3:CreateButton(
+    {Name = "New Neptunian", Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/GKbJ8657"))()
+        end}
+)
+local v8 =
+    v3:CreateButton(
+    {Name = "Scavanger hands by maxilito", Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/Cu7bKQWN", true))()
+            loadstring(game:HttpGet("https://pastebin.com/raw/E4ckPJwZ"))()
+        end}
+)
+local v8 =
+    v3:CreateButton(
+    {Name = "Reanimate", Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/vLgNmGda"))()
+        end}
+)
+local v8 =
+    v3:CreateButton(
+    {Name = "Hat Universe", Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/w2gKBD0Z"))()
+        end}
+)
+local v6 = v3:CreateSection("Only Requires the 5 Hats")
+local v8 =
+    v3:CreateButton(
+    {Name = "Minecraft Steve", Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/PMFb7h6z"))()
+        end}
+)
+local v8 =
+    v3:CreateButton(
+    {Name = "Anime Fly", Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/qtSCM21i"))()
+        end}
+)
+local v8 =
+    v3:CreateButton(
+    {Name = "Runner", Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/7i0GRfsK"))()
+        end}
+)
+local v8 =
+    v3:CreateButton(
+    {Name = "Angel", Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/WX9WQ561"))()
+        end}
+)
+local v9 =
+    v4:CreateSlider(
+    {
+        Name = "WalkSpeed",
+        Range = {16, 699 + 1},
+        Increment = 33 - 23,
+        Suffix = "Speed",
+        CurrentValue = 13 + 3,
+        Flag = "Slider1",
+        Callback = function(v11)
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v11
+        end
+    }
+)
+local v9 =
+    v4:CreateSlider(
+    {
+        Name = "Jump Height",
+        Range = {162 - 112, 500},
+        Increment = 24 - 14,
+        Suffix = "Height",
+        CurrentValue = 1533 - (988 + 495),
+        Flag = "Slider1",
+        Callback = function(v13)
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = v13
+        end
+    }
+)
+local v7 = v5:CreateParagraph({Title = "READ ME", Content = "I dont claim ownership of any of these scripts"})
+local v8 =
+    v4:CreateButton(
+    {Name = "Netless", Callback = function()
+            local v15 = 0 + 0
+            while true do
+                if (v15 == (0 - 0)) then
+                    _G.CustomUI = false
+                    loadstring(game:HttpGet("https://pastebin.com/raw/Cu7bKQWN", true))()
+                    break
+                end
+            end
+        end}
+)
+local v8 =
+    v4:CreateButton(
+    {Name = "Noclip", Callback = function()
+            local v16 = 0
+            local v17
+            local v18
+            while true do
+                if (v16 == (2 + 0)) then
+                    function clip()
+                        local v124 = 0 + 0
+                        while true do
+                            if (v124 == 0) then
+                                if v17 then
+                                    v17:Disconnect()
+                                end
+                                v18 = true
+                                break
+                            end
+                        end
+                    end
+                    noclip()
+                    break
+                end
+                if (v16 == (912 - (667 + 245))) then
+                    _G.CustomUI = false
+                    v17 = nil
+                    v16 = 2 - 1
+                end
+                if ((1019 - (381 + 637)) == v16) then
+                    v18 = nil
+                    function noclip()
+                        local v125 = 0 + 0
+                        local v126
+                        while true do
+                            if (v125 == (0 + 0)) then
+                                v18 = false
+                                v126 = nil
+                                v125 = 1 - 0
+                            end
+                            if (1 == v125) then
+                                function v126()
+                                    local v194 = 1435 - (122 + 1313)
+                                    while true do
+                                        if (v194 == 0) then
+                                            if ((v18 == false) and (game.Players.LocalPlayer.Character ~= nil)) then
+                                                for v303, v304 in pairs(
+                                                    game.Players.LocalPlayer.Character:GetDescendants()
+                                                ) do
+                                                    if
+                                                        (v304:IsA("BasePart") and v304.CanCollide and
+                                                            (v304.Name ~= floatName))
+                                                     then
+                                                        v304.CanCollide = false
+                                                    end
+                                                end
+                                            end
+                                            wait(0.21 + 0)
+                                            break
+                                        end
+                                    end
+                                end
+                                v17 = game:GetService("RunService").Stepped:Connect(v126)
+                                break
+                            end
+                        end
+                    end
+                    v16 = 3 - 1
+                end
+            end
+        end}
+)
+local v8 =
+    v5:CreateButton(
+    {Name = "Homebrew Admin", Callback = function()
+            local v19 = 0
+            while true do
+                if ((0 - 0) == v19) then
+                    _G.CustomUI = false
+                    loadstring(
+                        game:HttpGet("https://raw.githubusercontent.com/mgamingpro/HomebrewAdmin/master/Main", true)
+                    )()
+                    break
+                end
+            end
+        end}
+)
+local v8 =
+    v5:CreateButton(
+    {Name = "E To Fly", Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/4N1BKysn", true))()
+        end}
+)
+local v8 =
+    v5:CreateButton(
+    {Name = "Inf Jump", Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/3ceHVPL1", true))()
+        end}
+)
+local v8 =
+    v5:CreateButton(
+    {Name = "Toplits Fling Gui", Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/r97d7dS0", true))()
+        end}
+)
+local v8 =
+    v5:CreateButton(
+    {Name = "R6", Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/e2GzxYjD", true))()
+        end}
+)
+local v8 =
+    v5:CreateButton(
+    {Name = "Fake Korblox *R15*", Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/t3EJufB9", true))()
+        end}
+)
+if (game.PlaceId == 286090429) then
+    local v20 = v1:CreateTab("Arsenal", 4483362458 - 0)
+    local v21 =
+        v20:CreateButton(
+        {
+            Name = "ESP Workspace",
+            Callback = function()
+                for v72, v73 in pairs(workspace:GetDescendants()) do
+                    pcall(
+                        function()
+                            v73.Transparency = 0.5 + 0
+                        end
+                    )
+                end
+            end
+        }
+    )
+    local v21 =
+        v20:CreateButton(
+        {
+            Name = "Invisible Hitboxes",
+            Callback = function()
+                local v24 = 0 + 0
+                local v25
+                local v26
+                while true do
+                    if (v24 == 0) then
+                        function getplrsname()
+                            for v174, v175 in pairs(game:GetChildren()) do
+                                if (v175.ClassName == "Players") then
+                                    return v175.Name
+                                end
+                            end
+                        end
+                        v25 = getplrsname()
+                        v24 = 305 - (273 + 31)
+                    end
+                    if ((1728 - (1545 + 182)) == v24) then
+                        v26 = game[v25].LocalPlayer
+                        coroutine.resume(
+                            coroutine.create(
+                                function()
+                                    while wait(1548 - (579 + 968)) do
+                                        coroutine.resume(
+                                            coroutine.create(
+                                                function()
+                                                    for v229, v230 in pairs(game[v25]:GetPlayers()) do
+                                                        if ((v230.Name ~= v26.Name) and v230.Character) then
+                                                            v230.Character.RightUpperLeg.CanCollide = false
+                                                            v230.Character.RightUpperLeg.Transparency = 6 + 4
+                                                            v230.Character.RightUpperLeg.Size =
+                                                                Vector3.new(812 - (531 + 268), 26 - 13, 18 - 5)
+                                                            v230.Character.LeftUpperLeg.CanCollide = false
+                                                            v230.Character.LeftUpperLeg.Transparency = 4 + 6
+                                                            v230.Character.LeftUpperLeg.Size =
+                                                                Vector3.new(24 - 11, 28 - 15, 13)
+                                                            v230.Character.HeadHB.CanCollide = false
+                                                            v230.Character.HeadHB.Transparency = 10
+                                                            v230.Character.HeadHB.Size =
+                                                                Vector3.new(30, 39, 54 - (9 + 15))
+                                                            v230.Character.HumanoidRootPart.CanCollide = false
+                                                            v230.Character.HumanoidRootPart.Transparency = 10
+                                                            v230.Character.HumanoidRootPart.Size =
+                                                                Vector3.new(123, 123, 273 - 150)
+                                                        end
+                                                    end
+                                                end
+                                            )
+                                        )
+                                    end
+                                end
+                            )
+                        )
+                        break
+                    end
+                end
+            end
+        }
+    )
+    local v21 =
+        v20:CreateButton(
+        {Name = "Noclip", Callback = function()
+                _G.CustomUI = false
+                local v27 = nil
+                local v28 = nil
+                function noclip()
+                    v28 = false
+                    local function v74()
+                        if ((v28 == false) and (game.Players.LocalPlayer.Character ~= nil)) then
+                            for v176, v177 in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+                                if (v177:IsA("BasePart") and v177.CanCollide and (v177.Name ~= floatName)) then
+                                    v177.CanCollide = false
+                                end
+                            end
+                        end
+                        wait(0.21 + 0)
+                    end
+                    v27 = game:GetService("RunService").Stepped:Connect(v74)
+                end
+                function clip()
+                    local v75 = 1840 - (663 + 1177)
+                    while true do
+                        if (v75 == (533 - (127 + 406))) then
+                            if v27 then
+                                v27:Disconnect()
+                            end
+                            v28 = true
+                            break
+                        end
+                    end
+                end
+                noclip()
+            end}
+    )
+    local v21 =
+        v20:CreateButton(
+        {Name = "Fly (E)", Callback = function()
+                local v29 = 0 - 0
+                local v30
+                local v31
+                local v32
+                local v33
+                while true do
+                    if (v29 == (1386 - (708 + 678))) then
+                        v30 = game:GetService("UserInputService")
+                        v31 = game.Players.LocalPlayer
+                        v29 = 1 - 0
+                    end
+                    if (v29 == (7 - 4)) then
+                        v30.InputChanged:Connect(v33)
+                        break
+                    end
+                    if (v29 == (1118 - (483 + 634))) then
+                        v32 = Enum.KeyCode.E
+                        v33 = nil
+                        v29 = 2 + 0
+                    end
+                    if (v29 == (371 - (349 + 20))) then
+                        function v33()
+                            if v30:IsKeyDown(v32) then
+                                local v195 = v31.Character
+                                local v196 = v31:GetMouse()
+                                local v197 = v195:FindFirstChild("HumanoidRootPart").Position
+                                local v198 = (v196.Hit.p - v197).Unit
+                                local v199 = 1
+                                local v200 = v197 + (v198 * v199)
+                                v195:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(v200)
+                            end
+                        end
+                        v30.InputBegan:Connect(v33)
+                        v29 = 3
+                    end
+                end
+            end}
+    )
+    local v21 =
+        v20:CreateButton(
+        {
+            Name = "Kill All (use with aimbot)",
+            Callback = function()
+                local v34 = 0
+                local v35
+                local v36
+                while true do
+                    if (v34 == (0 - 0)) then
+                        v35 = game:GetService("Players")
+                        v36 = v35.LocalPlayer
+                        v34 = 1311 - (1236 + 74)
+                    end
+                    if (v34 == 1) then
+                        while true do
+                            local v144 = {}
+                            for v178, v179 in ipairs(v35:GetPlayers()) do
+                                if ((v179 ~= v36) and v179.Character and (v179.TeamColor ~= v36.TeamColor)) then
+                                    table.insert(v144, v179)
+                                end
+                            end
+                            if (#v144 > (0 - 0)) then
+                                local v202 = v144[math.random(#v144)]
+                                local v203 = v202.Character
+                                if v203 then
+                                    local v241 = 0 + 0
+                                    local v242
+                                    while true do
+                                        if (0 == v241) then
+                                            v242 = v203:FindFirstChild("HumanoidRootPart")
+                                            if v242 then
+                                                local v313 =
+                                                    Vector3.new(math.random(-(2 + 3), 5), 0 - 0, math.random(-5, 9 - 4))
+                                                v36.Character.HumanoidRootPart.CFrame = CFrame.new(v242.Position + v313)
+                                            end
+                                            break
+                                        end
+                                    end
+                                end
+                            end
+                            function getplrsname()
+                                for v204, v205 in pairs(game:GetChildren()) do
+                                    if (v205.ClassName == "Players") then
+                                        return v205.Name
+                                    end
+                                end
+                            end
+                            local v145 = getplrsname()
+                            local v146 = game[v145].LocalPlayer
+                            coroutine.resume(
+                                coroutine.create(
+                                    function()
+                                        while wait(1 + 0) do
+                                            coroutine.resume(
+                                                coroutine.create(
+                                                    function()
+                                                        for v243, v244 in pairs(game[v145]:GetPlayers()) do
+                                                            if ((v244.Name ~= v146.Name) and v244.Character) then
+                                                                v244.Character.RightUpperLeg.CanCollide = false
+                                                                v244.Character.RightUpperLeg.Transparency = 5 + 5
+                                                                v244.Character.RightUpperLeg.Size =
+                                                                    Vector3.new(34 - 21, 49 - 36, 1702 - (670 + 1019))
+                                                                v244.Character.LeftUpperLeg.CanCollide = false
+                                                                v244.Character.LeftUpperLeg.Transparency = 10
+                                                                v244.Character.LeftUpperLeg.Size =
+                                                                    Vector3.new(10 + 3, 8 + 5, 13)
+                                                                v244.Character.HeadHB.CanCollide = false
+                                                                v244.Character.HeadHB.Transparency = 10
+                                                                v244.Character.HeadHB.Size =
+                                                                    Vector3.new(56 - 26, 39, 1942 - (1211 + 701))
+                                                                v244.Character.HumanoidRootPart.CanCollide = false
+                                                                v244.Character.HumanoidRootPart.Transparency =
+                                                                    764 - (97 + 657)
+                                                                v244.Character.HumanoidRootPart.Size =
+                                                                    Vector3.new(582 - 459, 123, 278 - 155)
+                                                            end
+                                                        end
+                                                    end
+                                                )
+                                            )
+                                        end
+                                    end
+                                )
+                            )
+                            wait(1714 - (73 + 1640))
+                        end
+                        break
+                    end
+                end
+            end
+        }
+    )
+    local v21 =
+        v20:CreateButton(
+        {Name = "Closest Player Aimbot", Callback = function()
+                local v37 = game:GetService("Players")
+                local v38 = v37.LocalPlayer
+                local v39 = workspace.CurrentCamera
+                while true do
+                    local v76 = nil
+                    local v77 = math.huge
+                    for v128, v129 in ipairs(v37:GetPlayers()) do
+                        if ((v129 ~= v38) and v129.Character and (v129.TeamColor ~= v38.TeamColor)) then
+                            local v147 = 1651 - (479 + 1172)
+                            local v148
+                            while true do
+                                if (v147 == (1776 - (175 + 1601))) then
+                                    v148 = v129.Character
+                                    if v148 then
+                                        local v262 = 1382 - (32 + 1350)
+                                        local v263
+                                        while true do
+                                            if ((0 - 0) == v262) then
+                                                v263 = v148:FindFirstChild("HumanoidRootPart")
+                                                if v263 then
+                                                    local v321 = 1343 - (825 + 518)
+                                                    local v322
+                                                    while true do
+                                                        if (v321 == 0) then
+                                                            v322 =
+                                                                (v263.Position - v38.Character.HumanoidRootPart.Position).Magnitude
+                                                            if (v322 < v77) then
+                                                                v76 = v129
+                                                                v77 = v322
+                                                            end
+                                                            break
+                                                        end
+                                                    end
+                                                end
+                                                break
+                                            end
+                                        end
+                                    end
+                                    break
+                                end
+                            end
+                        end
+                    end
+                    if v76 then
+                        local v134 = v76.Character
+                        if v134 then
+                            local v180 = 1699 - (1010 + 689)
+                            local v181
+                            while true do
+                                if (v180 == (990 - (836 + 154))) then
+                                    v181 = v134:FindFirstChild("HumanoidRootPart")
+                                    if v181 then
+                                        local v290 = v134:FindFirstChild("Head")
+                                        if v290 then
+                                            local v305 = (v290.Position - v39.CFrame.Position).Unit
+                                            v39.CFrame = CFrame.new(v181.Position - (v305 * (3 + 0)), v181.Position)
+                                        else
+                                            v39.CFrame =
+                                                CFrame.new(
+                                                v181.Position - Vector3.new(0, 1.5 + 0, 0 - 0),
+                                                v181.Position
+                                            )
+                                        end
+                                    end
+                                    break
+                                end
+                            end
+                        end
+                    end
+                    wait()
+                end
+            end}
+    )
+end
+if ((game.PlaceId == (2788229376 - 0)) or (7242996909 - (141 + 418))) then
+    local v22 = v1:CreateTab("Dahood", 4483362857 - (7 + 392))
+    local v23 =
+        v22:CreateButton(
+        {
+            Name = "Q To Aim Lock",
+            Callback = function()
+                local v40 = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro2/main/ui2"))()
+                local v41 = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro/main/ui"))()
+                Settings = {
+                    rewrittenmain = {
+                        Enabled = true,
+                        Key = "q",
+                        DOT = true,
+                        AIRSHOT = true,
+                        NOTIF = true,
+                        AUTOPRED = false,
+                        FOV = math.huge,
+                        RESOVLER = false
+                    }
+                }
+                local v42 = "HumanoidRootPart"
+                local v43 = true
+                local v44 = 0.1357363
+                local v45 = 0 - 0
+                local v46 = 1443 - (713 + 680)
+                local v47 = game:GetService("Workspace").CurrentCamera
+                local v48
+                local v49 = false
+                local v50 = 0.136
+                local v51 = game.Players.LocalPlayer:GetMouse()
+                local v52 = Instance.new("Part", game.Workspace)
+                function makemarker(v78, v79, v80, v81, v82)
+                    local v83 = 0
+                    local v84
+                    local v85
+                    local v86
+                    while true do
+                        if (1 == v83) then
+                            v84.Size = UDim2.new(v81, v82, v81, v82)
+                            v84.AlwaysOnTop = Settings.rewrittenmain.DOT
+                            v85 = Instance.new("Frame", v84)
+                            v83 = 216 - (151 + 63)
+                        end
+                        if (v83 == (3 + 0)) then
+                            v86 = Instance.new("UICorner", v85)
+                            if (Settings.rewrittenmain.DOT == false) then
+                                v86.CornerRadius = UDim.new(0, 0 + 0)
+                            else
+                                v86.CornerRadius = UDim.new(1 + 0, 1 - 0)
+                            end
+                            return v84
+                        end
+                        if (v83 == 0) then
+                            v84 = Instance.new("BillboardGui", v78)
+                            v84.Name = "PP"
+                            v84.Adornee = v79
+                            v83 = 1 - 0
+                        end
+                        if ((7 - 5) == v83) then
+                            if (Settings.rewrittenmain.DOT == true) then
+                                v85.Size = UDim2.new(903 - (666 + 236), 598 - (448 + 150), 1, 0 - 0)
+                            else
+                                v85.Size = UDim2.new(401 - (45 + 356), 0, 0, 0 - 0)
+                            end
+                            if (Settings.rewrittenmain.DOT == true) then
+                                local v210 = 1363 - (237 + 1126)
+                                while true do
+                                    if (v210 == 0) then
+                                        v85.Transparency = 189 - (44 + 145)
+                                        v85.BackgroundTransparency = 1004 - (498 + 506)
+                                        break
+                                    end
+                                end
+                            else
+                                local v211 = 964 - (892 + 72)
+                                while true do
+                                    if (v211 == 0) then
+                                        v85.Transparency = 1
+                                        v85.BackgroundTransparency = 1
+                                        break
+                                    end
+                                end
+                            end
+                            v85.BackgroundColor3 = v80
+                            v83 = 3
+                        end
+                    end
+                end
+                local v53 = game.Players:GetPlayers()
+                function noob(v87)
+                    local v88 = 1589 - (1456 + 133)
+                    local v89
+                    local v90
+                    while true do
+                        if (v88 == (1982 - (184 + 1797))) then
+                            v90 =
+                                makemarker(
+                                guimain,
+                                v87.Character:WaitForChild(v42),
+                                Color3.fromRGB(105, 834 - (336 + 393), 1518 - (565 + 848)),
+                                0.3,
+                                3
+                            )
+                            v90.Name = v87.Name
+                            v88 = 1927 - (54 + 1871)
+                        end
+                        if (v88 == 2) then
+                            v87.CharacterAdded:connect(
+                                function(v182)
+                                    v90.Adornee = v182:WaitForChild(v42)
+                                end
+                            )
+                            spawn(
+                                function()
+                                    while wait() do
+                                        if v87.Character then
+                                        end
+                                    end
+                                end
+                            )
+                            break
+                        end
+                        if (v88 == (0 - 0)) then
+                            v89 = nil
+                            repeat
+                                wait()
+                            until v87.Character
+                            v88 = 1 + 0
+                        end
+                    end
+                end
+                for v91 = 1, #v53 do
+                    if (v53[v91] ~= game.Players.LocalPlayer) then
+                        noob(v53[v91])
+                    end
+                end
+                game.Players.PlayerAdded:connect(
+                    function(v92)
+                        noob(v92)
+                    end
+                )
+                spawn(
+                    function()
+                        local v93 = 0 + 0
+                        while true do
+                            if (v93 == (457 - (275 + 182))) then
+                                v52.Anchored = true
+                                v52.CanCollide = false
+                                v93 = 675 - (71 + 603)
+                            end
+                            if (v93 == 2) then
+                                if Settings.rewrittenmain.DOT then
+                                    makemarker(v52, v52, Color3.fromRGB(105, 156 - 51, 105), 0.4 + 0, 0)
+                                end
+                                break
+                            end
+                            if (v93 == (3 - 2)) then
+                                if (Settings.rewrittenmain.DOT == true) then
+                                    v52.Size = Vector3.new(17 - 9, 8, 8)
+                                else
+                                    v52.Size = Vector3.new(0, 0 + 0, 176 - (21 + 155))
+                                end
+                                v52.Transparency = 0.5 - 0
+                                v93 = 2
+                            end
+                        end
+                    end
+                )
+                game.Players.LocalPlayer:GetMouse().KeyDown:Connect(
+                    function(v94)
+                        if ((v94 == Settings.rewrittenmain.Key) and Settings.rewrittenmain.Enabled) then
+                            if (v49 == true) then
+                                v49 = false
+                                if (Settings.rewrittenmain.NOTIF == true) then
+                                    local v233 = 0
+                                    while true do
+                                        if (v233 == 0) then
+                                            v48 = getClosestPlayerToCursor()
+                                            game.StarterGui:SetCore(
+                                                "SendNotification",
+                                                {Title = "Heo Hub", Text = "Unlocked", Duration = 3}
+                                            )
+                                            break
+                                        end
+                                    end
+                                end
+                            else
+                                v48 = getClosestPlayerToCursor()
+                                v49 = true
+                                if (Settings.rewrittenmain.NOTIF == true) then
+                                    game.StarterGui:SetCore(
+                                        "SendNotification",
+                                        {
+                                            Title = "blaze.lock.",
+                                            Text = "Target: " .. tostring(v48.Character.Humanoid.DisplayName),
+                                            Duration = 727 - (690 + 34)
+                                        }
+                                    )
+                                end
+                            end
+                        end
+                    end
+                )
+                function getClosestPlayerToCursor()
+                    local v95 = 0
+                    local v96
+                    local v97
+                    while true do
+                        if (v95 == (0 + 0)) then
+                            v96 = nil
+                            v97 = Settings.rewrittenmain.FOV
+                            v95 = 1
+                        end
+                        if (1 == v95) then
+                            for v184, v185 in pairs(game.Players:GetPlayers()) do
+                                if
+                                    ((v185 ~= game.Players.LocalPlayer) and v185.Character and
+                                        v185.Character:FindFirstChild("Humanoid") and
+                                        (v185.Character.Humanoid.Health ~= (0 - 0)) and
+                                        v185.Character:FindFirstChild("HumanoidRootPart"))
+                                 then
+                                    local v234 = 0 + 0
+                                    local v235
+                                    local v236
+                                    while true do
+                                        if (v234 == 0) then
+                                            v235 = v47:WorldToViewportPoint(v185.Character.PrimaryPart.Position)
+                                            v236 = (Vector2.new(v235.X, v235.Y) - Vector2.new(v51.X, v51.Y)).magnitude
+                                            v234 = 1
+                                        end
+                                        if (v234 == 1) then
+                                            if (v236 < v97) then
+                                                v96 = v185
+                                                v97 = v236
+                                            end
+                                            break
+                                        end
+                                    end
+                                end
+                            end
+                            return v96
+                        end
+                    end
+                end
+                local v54 = nil
+                local v55 = nil
+                local v56 = nil
+                game:GetService("RunService").Stepped:connect(
+                    function()
+                        if (v49 and (v48.Character ~= nil) and v48.Character:FindFirstChild("HumanoidRootPart")) then
+                            v52.CFrame =
+                                CFrame.new(
+                                v48.Character.HumanoidRootPart.Position +
+                                    (v48.Character.HumanoidRootPart.Velocity * v50)
+                            )
+                        else
+                            v52.CFrame = CFrame.new(0 - 0, 6719 + 3280, 0 - 0)
+                        end
+                        if (Settings.rewrittenmain.AUTOPRED == true) then
+                            local v137 = 0 - 0
+                            while true do
+                                if (v137 == (0 + 0)) then
+                                    v54 = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
+                                    v55 = string.split(v54, "(")
+                                    v137 = 1
+                                end
+                                if (v137 == (3 - 2)) then
+                                    v56 = tonumber(v55[1 + 0])
+                                    if (v56 < (114 + 16)) then
+                                        v44 = 168.151 - (63 + 105)
+                                    elseif (v56 < 125) then
+                                        v44 = 1684.149 - (182 + 1502)
+                                    elseif (v56 < (1148 - (22 + 1016))) then
+                                        v44 = 0.146 + 0
+                                    elseif (v56 < (1308 - (704 + 499))) then
+                                        v44 = 0.138
+                                    elseif (v56 < (356 - 266)) then
+                                        v44 = 0.136 + 0
+                                    elseif (v56 < (1710 - (1430 + 200))) then
+                                        v44 = 425.134 - (394 + 31)
+                                    elseif (v56 < (21 + 49)) then
+                                        v44 = 0.131 + 0
+                                    elseif (v56 < (25 + 35)) then
+                                        v44 = 0.1229 + 0
+                                    elseif (v56 < (39 + 11)) then
+                                        v44 = 0.1225 + 0
+                                    elseif (v56 < 40) then
+                                        v44 = 1715.1256 - (781 + 934)
+                                    end
+                                    break
+                                end
+                            end
+                        end
+                    end
+                )
+                local v57 = getrawmetatable(game)
+                local v58 = v57.__namecall
+                setreadonly(v57, false)
+                v57.__namecall =
+                    newcclosure(
+                    function(...)
+                        local v98 = 1786 - (840 + 946)
+                        local v99
+                        while true do
+                            if ((1498 - (1253 + 244)) == v98) then
+                                return v58(...)
+                            end
+                            if (v98 == (0 - 0)) then
+                                v99 = {...}
+                                if
+                                    (v49 and (getnamecallmethod() == "FireServer") and (v99[2] == "UpdateMousePos") and
+                                        Settings.rewrittenmain.Enabled and
+                                        (v48.Character ~= nil))
+                                 then
+                                    local v214 = 1627 - (966 + 661)
+                                    while true do
+                                        if (v214 == (0 + 0)) then
+                                            if (v43 == true) then
+                                                v99[4 - 1] =
+                                                    v48.Character[v42].Position + (v48.Character[v42].Velocity * v44)
+                                            else
+                                                v99[3] = v48.Character[v42].Position
+                                            end
+                                            return v58(unpack(v99))
+                                        end
+                                    end
+                                end
+                                v98 = 1
+                            end
+                        end
+                    end
+                )
+                game:GetService("RunService").RenderStepped:Connect(
+                    function()
+                        if
+                            ((Settings.rewrittenmain.RESOVLER == true) and (v48.Character ~= nil) and v49 and
+                                Settings.rewrittenmain.Enabled)
+                         then
+                            if ((Settings.rewrittenmain.AIRSHOT == true) and v49 and (v48.Character ~= nil)) then
+                                if
+                                    (game.Workspace.Players[v48.Name].Humanoid:GetState() ==
+                                        Enum.HumanoidStateType.Freefall)
+                                 then
+                                    if ((v48.Character ~= nil) and (v48.Character.HumanoidRootPart.Anchored == true)) then
+                                        local v268 = 489 - (478 + 11)
+                                        while true do
+                                            if ((0 - 0) == v268) then
+                                                v45 = v45 + (2 - 1)
+                                                if (v45 >= v46) then
+                                                    v43 = false
+                                                    wait(436 - (153 + 281))
+                                                    v45 = 164 - (78 + 86)
+                                                end
+                                                break
+                                            end
+                                        end
+                                    else
+                                        v43 = true
+                                        v45 = 0 - 0
+                                    end
+                                    v42 = "LeftFoot"
+                                else
+                                    local v237 = 0 + 0
+                                    while true do
+                                        if ((1998 - (1987 + 11)) == v237) then
+                                            if
+                                                ((v48.Character ~= nil) and
+                                                    (v48.Character.HumanoidRootPart.Anchored == true))
+                                             then
+                                                local v308 = 0 - 0
+                                                while true do
+                                                    if (v308 == (0 + 0)) then
+                                                        v45 = v45 + (1225 - (1162 + 62))
+                                                        if (v45 >= v46) then
+                                                            local v326 = 1466 - (1263 + 203)
+                                                            while true do
+                                                                if (v326 == (450 - (238 + 212))) then
+                                                                    v43 = false
+                                                                    wait(1712 - (1173 + 537))
+                                                                    v326 = 1
+                                                                end
+                                                                if (v326 == 1) then
+                                                                    v45 = 0 - 0
+                                                                    break
+                                                                end
+                                                            end
+                                                        end
+                                                        break
+                                                    end
+                                                end
+                                            else
+                                                v43 = true
+                                                v45 = 0
+                                            end
+                                            v42 = "HumanoidRootPart"
+                                            break
+                                        end
+                                    end
+                                end
+                            else
+                                local v186 = 147 - (53 + 94)
+                                while true do
+                                    if (v186 == (0 - 0)) then
+                                        if
+                                            ((v48.Character ~= nil) and
+                                                (v48.Character.HumanoidRootPart.Anchored == true))
+                                         then
+                                            v45 = v45 + 1 + 0
+                                            if (v45 >= v46) then
+                                                local v309 = 546 - (97 + 449)
+                                                while true do
+                                                    if (v309 == 0) then
+                                                        v43 = false
+                                                        wait(1024 - (348 + 674))
+                                                        v309 = 1 + 0
+                                                    end
+                                                    if (1 == v309) then
+                                                        v45 = 1877 - (843 + 1034)
+                                                        break
+                                                    end
+                                                end
+                                            end
+                                        else
+                                            v43 = true
+                                            v45 = 0 + 0
+                                        end
+                                        v42 = "HumanoidRootPart"
+                                        break
+                                    end
+                                end
+                            end
+                        else
+                            v42 = "HumanoidRootPart"
+                        end
+                    end
+                )
+                local v40 = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro2/main/ui2"))()
+                local v41 = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro/main/ui"))()
+                Settings = {
+                    rewrittenmain = {
+                        Enabled = true,
+                        Key = "q",
+                        DOT = true,
+                        AIRSHOT = true,
+                        NOTIF = true,
+                        AUTOPRED = false,
+                        FOV = math.huge,
+                        RESOVLER = false
+                    }
+                }
+                local v42 = "HumanoidRootPart"
+                local v43 = true
+                local v44 = 1030.1357363 - (605 + 425)
+                local v45 = 0 - 0
+                local v46 = 1 + 49
+                local v47 = game:GetService("Workspace").CurrentCamera
+                local v48
+                local v49 = false
+                local v50 = 0.136 + 0
+                local v51 = game.Players.LocalPlayer:GetMouse()
+                local v52 = Instance.new("Part", game.Workspace)
+                function makemarker(v100, v101, v102, v103, v104)
+                    local v105 = 0 + 0
+                    local v106
+                    local v107
+                    local v108
+                    while true do
+                        if (2 == v105) then
+                            v107.BackgroundColor3 = v102
+                            v108 = Instance.new("UICorner", v107)
+                            if (Settings.rewrittenmain.DOT == false) then
+                                v108.CornerRadius = UDim.new(0 - 0, 778 - (708 + 70))
+                            else
+                                v108.CornerRadius = UDim.new(1 + 0, 1)
+                            end
+                            return v106
+                        end
+                        if (v105 == (1 + 0)) then
+                            v106.AlwaysOnTop = Settings.rewrittenmain.DOT
+                            v107 = Instance.new("Frame", v106)
+                            if (Settings.rewrittenmain.DOT == true) then
+                                v107.Size = UDim2.new(1, 705 - (475 + 230), 2 - 1, 1325 - (230 + 1095))
+                            else
+                                v107.Size = UDim2.new(0, 0, 0 - 0, 0 - 0)
+                            end
+                            if (Settings.rewrittenmain.DOT == true) then
+                                local v219 = 608 - (10 + 598)
+                                while true do
+                                    if (0 == v219) then
+                                        v107.Transparency = 0
+                                        v107.BackgroundTransparency = 0 - 0
+                                        break
+                                    end
+                                end
+                            else
+                                local v220 = 0 - 0
+                                while true do
+                                    if (v220 == 0) then
+                                        v107.Transparency = 1 + 0
+                                        v107.BackgroundTransparency = 1
+                                        break
+                                    end
+                                end
+                            end
+                            v105 = 5 - 3
+                        end
+                        if (v105 == 0) then
+                            v106 = Instance.new("BillboardGui", v100)
+                            v106.Name = "PP"
+                            v106.Adornee = v101
+                            v106.Size = UDim2.new(v103, v104, v103, v104)
+                            v105 = 1
+                        end
+                    end
+                end
+                local v53 = game.Players:GetPlayers()
+                function noob(v109)
+                    local v110 = 551 - (445 + 106)
+                    local v111
+                    local v112
+                    while true do
+                        if (v110 == (552 - (482 + 68))) then
+                            v109.CharacterAdded:connect(
+                                function(v187)
+                                    v112.Adornee = v187:WaitForChild(v42)
+                                end
+                            )
+                            spawn(
+                                function()
+                                    while wait() do
+                                        if v109.Character then
+                                        end
+                                    end
+                                end
+                            )
+                            break
+                        end
+                        if (v110 == (1 - 0)) then
+                            v112 =
+                                makemarker(
+                                guimain,
+                                v109.Character:WaitForChild(v42),
+                                Color3.fromRGB(176 - 71, 105, 105),
+                                1940.3 - (939 + 1001),
+                                470 - (433 + 34)
+                            )
+                            v112.Name = v109.Name
+                            v110 = 4 - 2
+                        end
+                        if (v110 == (1054 - (135 + 919))) then
+                            v111 = nil
+                            repeat
+                                wait()
+                            until v109.Character
+                            v110 = 1 + 0
+                        end
+                    end
+                end
+                for v113 = 1, #v53 do
+                    if (v53[v113] ~= game.Players.LocalPlayer) then
+                        noob(v53[v113])
+                    end
+                end
+                game.Players.PlayerAdded:connect(
+                    function(v114)
+                        noob(v114)
+                    end
+                )
+                spawn(
+                    function()
+                        v52.Anchored = true
+                        v52.CanCollide = false
+                        if (Settings.rewrittenmain.DOT == true) then
+                            v52.Size = Vector3.new(57 - (15 + 34), 37 - 29, 6 + 2)
+                        else
+                            v52.Size = Vector3.new(1434 - (1058 + 376), 0, 0 + 0)
+                        end
+                        v52.Transparency = 0.5 - 0
+                        if Settings.rewrittenmain.DOT then
+                            makemarker(v52, v52, Color3.fromRGB(1 + 104, 301 - (6 + 190), 31 + 74), 0.4, 0 + 0)
+                        end
+                    end
+                )
+                game.Players.LocalPlayer:GetMouse().KeyDown:Connect(
+                    function(v118)
+                        if ((v118 == Settings.rewrittenmain.Key) and Settings.rewrittenmain.Enabled) then
+                            if (v49 == true) then
+                                local v189 = 517 - (178 + 339)
+                                while true do
+                                    if (v189 == 0) then
+                                        v49 = false
+                                        if (Settings.rewrittenmain.NOTIF == true) then
+                                            v48 = getClosestPlayerToCursor()
+                                            game.StarterGui:SetCore(
+                                                "SendNotification",
+                                                {Title = "blaze.lock.", Text = "Unlocked", Duration = 3}
+                                            )
+                                        end
+                                        break
+                                    end
+                                end
+                            else
+                                local v190 = 0 + 0
+                                while true do
+                                    if (1 == v190) then
+                                        if (Settings.rewrittenmain.NOTIF == true) then
+                                            game.StarterGui:SetCore(
+                                                "SendNotification",
+                                                {
+                                                    Title = "blaze.lock.",
+                                                    Text = "Target: " .. tostring(v48.Character.Humanoid.DisplayName),
+                                                    Duration = 3 + 0
+                                                }
+                                            )
+                                        end
+                                        break
+                                    end
+                                    if (v190 == (0 + 0)) then
+                                        v48 = getClosestPlayerToCursor()
+                                        v49 = true
+                                        v190 = 1
+                                    end
+                                end
+                            end
+                        end
+                    end
+                )
+                function getClosestPlayerToCursor()
+                    local v119 = 0 + 0
+                    local v120
+                    local v121
+                    while true do
+                        if ((3 - 2) == v119) then
+                            for v191, v192 in pairs(game.Players:GetPlayers()) do
+                                if
+                                    ((v192 ~= game.Players.LocalPlayer) and v192.Character and
+                                        v192.Character:FindFirstChild("Humanoid") and
+                                        (v192.Character.Humanoid.Health ~= (1408 - (954 + 454))) and
+                                        v192.Character:FindFirstChild("HumanoidRootPart"))
+                                 then
+                                    local v238 = 782 - (249 + 533)
+                                    local v239
+                                    local v240
+                                    while true do
+                                        if (v238 == 0) then
+                                            v239 = v47:WorldToViewportPoint(v192.Character.PrimaryPart.Position)
+                                            v240 = (Vector2.new(v239.X, v239.Y) - Vector2.new(v51.X, v51.Y)).magnitude
+                                            v238 = 2 - 1
+                                        end
+                                        if (v238 == (1 + 0)) then
+                                            if (v240 < v121) then
+                                                v120 = v192
+                                                v121 = v240
+                                            end
+                                            break
+                                        end
+                                    end
+                                end
+                            end
+                            return v120
+                        end
+                        if ((965 - (33 + 932)) == v119) then
+                            v120 = nil
+                            v121 = Settings.rewrittenmain.FOV
+                            v119 = 1839 - (1317 + 521)
+                        end
+                    end
+                end
+                local v54 = nil
+                local v55 = nil
+                local v56 = nil
+                game:GetService("RunService").Stepped:connect(
+                    function()
+                        if (v49 and (v48.Character ~= nil) and v48.Character:FindFirstChild("HumanoidRootPart")) then
+                            v52.CFrame =
+                                CFrame.new(
+                                v48.Character.HumanoidRootPart.Position +
+                                    (v48.Character.HumanoidRootPart.Velocity * v50)
+                            )
+                        else
+                            v52.CFrame = CFrame.new(0 + 0, 9999, 0)
+                        end
+                        if (Settings.rewrittenmain.AUTOPRED == true) then
+                            v54 = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
+                            v55 = string.split(v54, "(")
+                            v56 = tonumber(v55[1 + 0])
+                            if (v56 < 130) then
+                                v44 = 0.151 + 0
+                            elseif (v56 < (43 + 82)) then
+                                v44 = 0.149 + 0
+                            elseif (v56 < (103 + 7)) then
+                                v44 = 0.146 - 0
+                            elseif (v56 < 105) then
+                                v44 = 0.138 + 0
+                            elseif (v56 < (246 - 156)) then
+                                v44 = 0.136
+                            elseif (v56 < 80) then
+                                v44 = 0.134
+                            elseif (v56 < (2 + 68)) then
+                                v44 = 0.131 - 0
+                            elseif (v56 < 60) then
+                                v44 = 0.1229
+                            elseif (v56 < 50) then
+                                v44 = 0.1225 + 0
+                            elseif (v56 < (113 - 73)) then
+                                v44 = 0.1256 - 0
+                            end
+                        end
+                    end
+                )
+                local v57 = getrawmetatable(game)
+                local v58 = v57.__namecall
+                setreadonly(v57, false)
+                v57.__namecall =
+                    newcclosure(
+                    function(...)
+                        local v122 = 0
+                        local v123
+                        while true do
+                            if (v122 == (81 - (39 + 41))) then
+                                return v58(...)
+                            end
+                            if (0 == v122) then
+                                v123 = {...}
+                                if
+                                    (v49 and (getnamecallmethod() == "FireServer") and (v123[4 - 2] == "UpdateMousePos") and
+                                        Settings.rewrittenmain.Enabled and
+                                        (v48.Character ~= nil))
+                                 then
+                                    local v221 = 0 + 0
+                                    while true do
+                                        if (v221 == (821 - (769 + 52))) then
+                                            if (v43 == true) then
+                                                v123[1 + 2] =
+                                                    v48.Character[v42].Position + (v48.Character[v42].Velocity * v44)
+                                            else
+                                                v123[3] = v48.Character[v42].Position
+                                            end
+                                            return v58(unpack(v123))
+                                        end
+                                    end
+                                end
+                                v122 = 1
+                            end
+                        end
+                    end
+                )
+                game:GetService("RunService").RenderStepped:Connect(
+                    function()
+                        if
+                            ((Settings.rewrittenmain.RESOVLER == true) and (v48.Character ~= nil) and v49 and
+                                Settings.rewrittenmain.Enabled)
+                         then
+                            if ((Settings.rewrittenmain.AIRSHOT == true) and v49 and (v48.Character ~= nil)) then
+                                if
+                                    (game.Workspace.Players[v48.Name].Humanoid:GetState() ==
+                                        Enum.HumanoidStateType.Freefall)
+                                 then
+                                    if ((v48.Character ~= nil) and (v48.Character.HumanoidRootPart.Anchored == true)) then
+                                        v45 = v45 + (3 - 2)
+                                        if (v45 >= v46) then
+                                            local v299 = 0
+                                            while true do
+                                                if (v299 == (1 + 0)) then
+                                                    v45 = 0 - 0
+                                                    break
+                                                end
+                                                if (v299 == 0) then
+                                                    v43 = false
+                                                    wait(2 + 0)
+                                                    v299 = 1
+                                                end
+                                            end
+                                        end
+                                    else
+                                        local v273 = 68 - (16 + 52)
+                                        while true do
+                                            if (v273 == (0 + 0)) then
+                                                v43 = true
+                                                v45 = 0 - 0
+                                                break
+                                            end
+                                        end
+                                    end
+                                    v42 = "LeftFoot"
+                                else
+                                    if ((v48.Character ~= nil) and (v48.Character.HumanoidRootPart.Anchored == true)) then
+                                        v45 = v45 + 1 + 0
+                                        if (v45 >= v46) then
+                                            local v300 = 0
+                                            while true do
+                                                if (v300 == (1351 - (140 + 1211))) then
+                                                    v43 = false
+                                                    wait(2)
+                                                    v300 = 1
+                                                end
+                                                if (v300 == 1) then
+                                                    v45 = 0 - 0
+                                                    break
+                                                end
+                                            end
+                                        end
+                                    else
+                                        v43 = true
+                                        v45 = 0 + 0
+                                    end
+                                    v42 = "HumanoidRootPart"
+                                end
+                            else
+                                local v193 = 0 + 0
+                                while true do
+                                    if (v193 == (0 - 0)) then
+                                        if
+                                            ((v48.Character ~= nil) and
+                                                (v48.Character.HumanoidRootPart.Anchored == true))
+                                         then
+                                            v45 = v45 + 1 + 0
+                                            if (v45 >= v46) then
+                                                local v310 = 454 - (105 + 349)
+                                                while true do
+                                                    if (v310 == 1) then
+                                                        v45 = 548 - (36 + 512)
+                                                        break
+                                                    end
+                                                    if (v310 == (1433 - (1140 + 293))) then
+                                                        v43 = false
+                                                        wait(2 + 0)
+                                                        v310 = 1 + 0
+                                                    end
+                                                end
+                                            end
+                                        else
+                                            v43 = true
+                                            v45 = 0
+                                        end
+                                        v42 = "HumanoidRootPart"
+                                        break
+                                    end
+                                end
+                            end
+                        else
+                            v42 = "HumanoidRootPart"
+                        end
+                    end
+                )
+            end
+        }
+    )
+    local v23 =
+        v22:CreateButton(
+        {Name = "F To Fly", Callback = function()
+                local v60 = 0
+                local v61
+                local v62
+                local v63
+                local v64
+                while true do
+                    if (v60 == 2) then
+                        function v64()
+                            if v61:IsKeyDown(v63) then
+                                local v222 = v62.Character
+                                local v223 = v62:GetMouse()
+                                local v224 = v222:FindFirstChild("HumanoidRootPart").Position
+                                local v225 = (v223.Hit.p - v224).Unit
+                                local v226 = 1
+                                local v227 = v224 + (v225 * v226)
+                                v222:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(v227)
+                            end
+                        end
+                        v61.InputBegan:Connect(v64)
+                        v60 = 3
+                    end
+                    if (v60 == 3) then
+                        v61.InputChanged:Connect(v64)
+                        break
+                    end
+                    if (v60 == (1 - 0)) then
+                        v63 = Enum.KeyCode.F
+                        v64 = nil
+                        v60 = 1 + 1
+                    end
+                    if (v60 == (0 + 0)) then
+                        v61 = game:GetService("UserInputService")
+                        v62 = game.Players.LocalPlayer
+                        v60 = 1
+                    end
+                end
+            end}
+    )
+    local v23 =
+        v22:CreateButton(
+        {
+            Name = "X To Orbit (Use Aimlock)",
+            Callback = function()
+                local v65 = 0 + 0
+                local v66
+                local v67
+                local v68
+                local v69
+                local v70
+                local v71
+                while true do
+                    if (v65 == (1591 - (346 + 1245))) then
+                        v66 = game:GetService("Players")
+                        v67 = game:GetService("Players").LocalPlayer:GetMouse()
+                        v65 = 1 - 0
+                    end
+                    if (v65 == (13 - 9)) then
+                        v68.InputBegan:Connect(v71)
+                        break
+                    end
+                    if (v65 == (1812 - (349 + 1460))) then
+                        v71 = nil
+                        function v71(v170, v171)
+                            if (v170.KeyCode == Enum.KeyCode.X) then
+                                v70()
+                            elseif ((v170.KeyCode == Enum.KeyCode.Z) and (v69 ~= nil)) then
+                                local v245 = 0 + 0
+                                while true do
+                                    if ((0 + 0) == v245) then
+                                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v69)
+                                        v69 = nil
+                                        break
+                                    end
+                                end
+                            end
+                        end
+                        v65 = 4
+                    end
+                    if (v65 == (1 + 0)) then
+                        v68 = game:GetService("UserInputService")
+                        v69 = nil
+                        v65 = 2 - 0
+                    end
+                    if (v65 == (1 + 1)) then
+                        v70 = nil
+                        function v70()
+                            local v172 = 0 + 0
+                            local v173
+                            while true do
+                                if ((0 - 0) == v172) then
+                                    if (v69 == nil) then
+                                        local v274 = 0 + 0
+                                        while true do
+                                            if (v274 == 0) then
+                                                targetting = true
+                                                v69 = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+                                                break
+                                            end
+                                        end
+                                    end
+                                    v173 = nil
+                                    v172 = 1 - 0
+                                end
+                                if (v172 == (557 - (45 + 511))) then
+                                    for v246, v247 in pairs(v66:GetPlayers()) do
+                                        local v248 = 0 + 0
+                                        local v249
+                                        while true do
+                                            if (v248 == 0) then
+                                                v249 = v247.Character
+                                                if (v249 and v249:FindFirstChild("HumanoidRootPart")) then
+                                                    local v315 = v249.HumanoidRootPart
+                                                    local v316 = v315.Position
+                                                    local v317 =
+                                                        (v316 -
+                                                        game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+                                                    local v318 = v67.Hit.p
+                                                    local v319 = (v316 - v318).Magnitude
+                                                    if
+                                                        ((v319 <= (7 - 2)) and
+                                                            (not v173 or
+                                                                (v317 <
+                                                                    (v173.Character.HumanoidRootPart.Position -
+                                                                        game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude)))
+                                                     then
+                                                        v173 = v247
+                                                    end
+                                                end
+                                                break
+                                            end
+                                        end
+                                    end
+                                    if v173 then
+                                        local v275 = 0 + 0
+                                        local v276
+                                        local v277
+                                        while true do
+                                            if (v275 == (1 - 0)) then
+                                                if v277 then
+                                                    local v323 = 718 - (189 + 529)
+                                                    local v324
+                                                    while true do
+                                                        if (v323 == (315 - (155 + 160))) then
+                                                            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                                                                CFrame.new(v69)
+                                                            v324 = 0
+                                                            v323 = 1
+                                                        end
+                                                        if (v323 == 1) then
+                                                            while v324 < (11 - 6) do
+                                                                local v328 = 1308 - (1070 + 238)
+                                                                local v329
+                                                                while true do
+                                                                    if (v328 == (0 - 0)) then
+                                                                        v329 =
+                                                                            game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+                                                                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                                                                            CFrame.new(v329) *
+                                                                            CFrame.new(
+                                                                                (v277.Position - v329).Unit * (8 - 3)
+                                                                            )
+                                                                        v328 = 3 - 2
+                                                                    end
+                                                                    if (v328 == (2 + 0)) then
+                                                                        targetting = false
+                                                                        break
+                                                                    end
+                                                                    if (v328 == 1) then
+                                                                        wait()
+                                                                        v324 = v324 + wait()
+                                                                        v328 = 2
+                                                                    end
+                                                                end
+                                                            end
+                                                            break
+                                                        end
+                                                    end
+                                                end
+                                                break
+                                            end
+                                            if (v275 == (852 - (438 + 414))) then
+                                                v276 = v173.Character
+                                                v277 = v276:FindFirstChild("HumanoidRootPart")
+                                                v275 = 1 + 0
+                                            end
+                                        end
+                                    end
+                                    break
+                                end
+                            end
+                        end
+                        v65 = 4 - 1
+                    end
+                end
+            end
+        }
+    )
+end
