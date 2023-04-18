@@ -1,4 +1,5 @@
 --shit done by callmexdrop#2505
+--not 100% decoded but can still be used
 
 local v0 = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Rayfield/main/source"))()
 v0:Notify(
@@ -26,11 +27,11 @@ local v1 =
         KeySettings = {
             Title = "Heo Hub",
             Subtitle = "Key System",
-            Note = "Key is in the discord server, In 🔑Key system🔑 tab",
+            Note = "Key is in the discord server, In 🔑Key system🔑 tab", -- key is on the line 33 or just remove all this
             FileName = "SiriusKey",
             SaveKey = false,
             GrabKeyFromSite = true,
-            Key = "https://pastebin.com/raw/ZNH5zAFx"
+            Key = "https://pastebin.com/raw/ZNH5zAFx" -- or IUNFVUOWYVBSEJUHVJSILUYFOIFSIFVVJKN same thing
         }
     }
 )
