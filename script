@@ -1,20 +1,32 @@
 --shit done by callmexdrop#2505
 --not 100% decoded but can still be used
+--i will explain some things i dont use this script so i cba to do all of it 
 
-local v0 = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Rayfield/main/source"))()
+--[[)
+local v8 = -- dont know why the fuck this is there
+    v3:CreateButton(
+    {Name = "name of the butten", Callback = function()
+             --code what you whatnt to exacute after the butten is clicked
+        end}
+)]] --all this is is a butten
+
+
+
+local v0 = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Rayfield/main/source"))() --this is there ui
+
 v0:Notify(
     {
         Title = "Notification",
         Content = "Loading...",
-        Duration = 5.5 + 1,
+        Duration = 6.5, --all this dose it give you a pop up
         Image = 4483362458,
         Actions = {Ignore = {Name = "Okay!", Callback = function()
                     print("The user tapped Okay!")
                 end}}
     }
+--start of key 
+-- deleat evrything betwean start of kay and end of key to remove the key
 )
-
---call of this is for the key change it or remove it
 local v1 =
     v0:CreateWindow(
     {
@@ -22,20 +34,21 @@ local v1 =
         LoadingTitle = "Heo Hub",
         LoadingSubtitle = "Aided by Sirius",
         ConfigurationSaving = {Enabled = true, FolderName = nil, FileName = "Big Hub"},
-        Discord = {Enabled = true, Invite = "CVTdeGY7gD", RememberJoins = false},
-        KeySystem = true,
+        Discord = {Enabled = true, Invite = "CVTdeGY7gD", RememberJoins = false}, -- there discord invite
+        KeySystem = true, -- set to flase to remove the key 
         KeySettings = {
             Title = "Heo Hub",
             Subtitle = "Key System",
-            Note = "Key is in the discord server, In 🔑Key system🔑 tab", -- key is on the line 33 or just remove all this
+            Note = "Key is in the discord server, In 🔑Key system🔑 tab",
             FileName = "SiriusKey",
-            SaveKey = false,
+            SaveKey = false, --put this to true if you dont what to type in a key evry time you exacute the script i think
             GrabKeyFromSite = true,
-            Key = "https://pastebin.com/raw/ZNH5zAFx" -- or IUNFVUOWYVBSEJUHVJSILUYFOIFSIFVVJKN same thing
+            Key = "https://pastebin.com/raw/ZNH5zAFx" --set the key to false on line 27 or the key is IUNFVUOWYVBSEJUHVJSILUYFOIFSIFVVJKN
         }
     }
 )
---end of the key
+--end of key
+
 
 local v2 = v1:CreateTab("Welcome", 4483362458 - 0)
 local v3 = v1:CreateTab("FE Scripts", 4483362458)
@@ -46,7 +59,7 @@ local v7 =
     v2:CreateParagraph(
     {
         Title = "What is HeoHub?",
-        Content = "Heo Hub is  a brand new Hub for roblox which was founded on 3/28/2023 by Clamtour. This hub uses Sirius's library to present this clean asl ui. Big thanks to Kenfy for showcasing this hub and making it known, Most fe scripts are made by clamtour or a friend of mine but some are from other creators, I try to put a notifacation for their rightful owners when you launch the script cracked by callmexdrop#2505."
+        Content = "Heo Hub is a brand new Hub for roblox which was founded on 3/28/2023 by Clamtour. This hub uses Sirius's library to present this clean asl ui. Big thanks to Kenfy for showcasing this hub and making it known, Most fe scripts are made by clamtour or a friend of mine but some are from other creators, I try to put a notifacation for their rightful owners when you launch the script."
     }
 )
 local v7 =
@@ -205,14 +218,14 @@ local v9 =
 local v9 =
     v4:CreateSlider(
     {
-        Name = "Jump Height",
-        Range = {162 - 112, 500},
+       Name = "Jump Height",
+        Range = {13,500} -- can be enything to 13 to 500
         Increment = 24 - 14,
         Suffix = "Height",
         CurrentValue = 1533 - (988 + 495),
         Flag = "Slider1",
         Callback = function(v13)
-            game.Players.LocalPlayer.Character.Humanoid.JumpPower = v13
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = v13 -- locel player =  you and it puts your jump power to 13
         end
     }
 )
