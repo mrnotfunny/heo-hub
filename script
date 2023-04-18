@@ -6,7 +6,7 @@
 local v8 = -- dont know why the fuck this is there
     v3:CreateButton(
     {Name = "name of the butten", Callback = function()
-             --code what you whatnt to exacute after the butten is clicked
+    --code what you whatnt to exacute after the butten is clicked
         end}
 )]] --all this is is a butten
 
@@ -205,30 +205,28 @@ local v9 =
     v4:CreateSlider(
     {
         Name = "WalkSpeed",
-        Range = {16, 699 + 1},
-        Increment = 33 - 23,
+        Range = {16, 700},
+        Increment = 10,
         Suffix = "Speed",
-        CurrentValue = 13 + 3,
+        CurrentValue = 16,
         Flag = "Slider1",
         Callback = function(v11)
             game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v11
         end
     }
 )
-local v9 =
-    v4:CreateSlider(
-    {
-       Name = "Jump Height",
-        Range = {13,500} -- can be enything to 13 to 500
-        Increment = 24 - 14,
-        Suffix = "Height",
-        CurrentValue = 1533 - (988 + 495),
-        Flag = "Slider1",
-        Callback = function(v13)
-            game.Players.LocalPlayer.Character.Humanoid.JumpPower = v13 -- locel player =  you and it puts your jump power to 13
-        end
-    }
-)
+local v9 = v4:CreateSlider({
+    Name = "Jump Height",
+    Range = {13, 500},
+    Increment = 10,
+    Suffix = "Height",
+    CurrentValue = 30,
+    Flag = "Slider1",
+    Callback = function(value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
+    end
+})
+
 local v7 = v5:CreateParagraph({Title = "READ ME", Content = "I dont claim ownership of any of these scripts"})
 local v8 =
     v4:CreateButton(
@@ -244,76 +242,47 @@ local v8 =
         end}
 )
 local v8 =
-    v4:CreateButton(
-    {Name = "Noclip", Callback = function()
-            local v16 = 0
-            local v17
-            local v18
+  v4:CreateButton({
+    Name = "Noclip",
+    Callback = function()
+        local isNoclipEnabled = false
+        local steppedConnection
+
+        local function disableCollisions()
             while true do
-                if (v16 == (2 + 0)) then
-                    function clip()
-                        local v124 = 0 + 0
-                        while true do
-                            if (v124 == 0) then
-                                if v17 then
-                                    v17:Disconnect()
-                                end
-                                v18 = true
-                                break
-                            end
+                if (isNoclipEnabled == false) and (game.Players.LocalPlayer.Character ~= nil) then
+                    for _, part in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+                        if part:IsA("BasePart") and part.CanCollide and (part.Name ~= "floatName") then
+                            part.CanCollide = false
                         end
                     end
-                    noclip()
-                    break
                 end
-                if (v16 == (912 - (667 + 245))) then
-                    _G.CustomUI = false
-                    v17 = nil
-                    v16 = 2 - 1
-                end
-                if ((1019 - (381 + 637)) == v16) then
-                    v18 = nil
-                    function noclip()
-                        local v125 = 0 + 0
-                        local v126
-                        while true do
-                            if (v125 == (0 + 0)) then
-                                v18 = false
-                                v126 = nil
-                                v125 = 1 - 0
-                            end
-                            if (1 == v125) then
-                                function v126()
-                                    local v194 = 1435 - (122 + 1313)
-                                    while true do
-                                        if (v194 == 0) then
-                                            if ((v18 == false) and (game.Players.LocalPlayer.Character ~= nil)) then
-                                                for v303, v304 in pairs(
-                                                    game.Players.LocalPlayer.Character:GetDescendants()
-                                                ) do
-                                                    if
-                                                        (v304:IsA("BasePart") and v304.CanCollide and
-                                                            (v304.Name ~= floatName))
-                                                     then
-                                                        v304.CanCollide = false
-                                                    end
-                                                end
-                                            end
-                                            wait(0.21 + 0)
-                                            break
-                                        end
-                                    end
-                                end
-                                v17 = game:GetService("RunService").Stepped:Connect(v126)
-                                break
-                            end
-                        end
-                    end
-                    v16 = 3 - 1
-                end
+                wait(0.21)
             end
-        end}
-)
+        end
+
+        local function enableNoclip()
+            if steppedConnection then
+                steppedConnection:Disconnect()
+            end
+            isNoclipEnabled = true
+        end
+
+        local function disableNoclip()
+            if steppedConnection then
+                steppedConnection:Disconnect()
+            end
+            isNoclipEnabled = false
+        end
+
+        disableCollisions()
+        steppedConnection = game:GetService("RunService").Stepped:Connect(disableCollisions)
+
+        _G.CustomUI = false
+        disableNoclip()
+    end
+})
+
 local v8 =
     v5:CreateButton(
     {Name = "Homebrew Admin", Callback = function()
@@ -362,325 +331,212 @@ local v8 =
 if (game.PlaceId == 286090429) then
     local v20 = v1:CreateTab("Arsenal", 4483362458 - 0)
     local v21 =
-        v20:CreateButton(
-        {
-            Name = "ESP Workspace",
-            Callback = function()
-                for v72, v73 in pairs(workspace:GetDescendants()) do
-                    pcall(
-                        function()
-                            v73.Transparency = 0.5 + 0
-                        end
-                    )
+    
+    v20:CreateButton(
+    {
+        Name = "ESP Workspace",
+        Callback = function()
+            for _, descendant in ipairs(workspace:GetDescendants()) do
+                descendant.Transparency = 0.5
+            end
+        end
+    }
+)
+
+ local v21 = v20:CreateButton({
+    Name = "Invisible Hitboxes",
+    Callback = function()
+        local v24 = 0
+        local v25
+
+        function getplrsname()
+            for _, v in pairs(game:GetChildren()) do
+                if v.ClassName == "Players" then
+                    return v.Name
                 end
             end
-        }
-    )
-    local v21 =
-        v20:CreateButton(
-        {
-            Name = "Invisible Hitboxes",
-            Callback = function()
-                local v24 = 0 + 0
-                local v25
-                local v26
-                while true do
-                    if (v24 == 0) then
-                        function getplrsname()
-                            for v174, v175 in pairs(game:GetChildren()) do
-                                if (v175.ClassName == "Players") then
-                                    return v175.Name
-                                end
+        end
+
+        v25 = getplrsname()
+
+        while true do
+            if v24 == 1728 - (1545 + 182) then
+                local v26 = game[v25].LocalPlayer
+
+                coroutine.resume(coroutine.create(function()
+                    while wait(1548 - (579 + 968)) do
+                        for _, v in pairs(game[v25]:GetPlayers()) do
+                            if v.Name ~= v26.Name and v.Character then
+                                v.Character.RightUpperLeg.CanCollide = false
+                                v.Character.RightUpperLeg.Transparency = 10
+                                v.Character.RightUpperLeg.Size = Vector3.new(812 - (531 + 268), 26 - 13, 18 - 5)
+
+                                v.Character.LeftUpperLeg.CanCollide = false
+                                v.Character.LeftUpperLeg.Transparency = 10
+                                v.Character.LeftUpperLeg.Size = Vector3.new(24 - 11, 28 - 15, 13)
+
+                                v.Character.HeadHB.CanCollide = false
+                                v.Character.HeadHB.Transparency = 1
+                                v.Character.HeadHB.Size = Vector3.new(30, 39, 54 - (9 + 15))
+
+                                v.Character.HumanoidRootPart.CanCollide = false
+                                v.Character.HumanoidRootPart.Transparency = 1
+                                v.Character.HumanoidRootPart.Size = Vector3.new(123, 123, 273 - 150)
                             end
                         end
-                        v25 = getplrsname()
-                        v24 = 305 - (273 + 31)
                     end
-                    if ((1728 - (1545 + 182)) == v24) then
-                        v26 = game[v25].LocalPlayer
-                        coroutine.resume(
-                            coroutine.create(
-                                function()
-                                    while wait(1548 - (579 + 968)) do
-                                        coroutine.resume(
-                                            coroutine.create(
-                                                function()
-                                                    for v229, v230 in pairs(game[v25]:GetPlayers()) do
-                                                        if ((v230.Name ~= v26.Name) and v230.Character) then
-                                                            v230.Character.RightUpperLeg.CanCollide = false
-                                                            v230.Character.RightUpperLeg.Transparency = 6 + 4
-                                                            v230.Character.RightUpperLeg.Size =
-                                                                Vector3.new(812 - (531 + 268), 26 - 13, 18 - 5)
-                                                            v230.Character.LeftUpperLeg.CanCollide = false
-                                                            v230.Character.LeftUpperLeg.Transparency = 4 + 6
-                                                            v230.Character.LeftUpperLeg.Size =
-                                                                Vector3.new(24 - 11, 28 - 15, 13)
-                                                            v230.Character.HeadHB.CanCollide = false
-                                                            v230.Character.HeadHB.Transparency = 10
-                                                            v230.Character.HeadHB.Size =
-                                                                Vector3.new(30, 39, 54 - (9 + 15))
-                                                            v230.Character.HumanoidRootPart.CanCollide = false
-                                                            v230.Character.HumanoidRootPart.Transparency = 10
-                                                            v230.Character.HumanoidRootPart.Size =
-                                                                Vector3.new(123, 123, 273 - 150)
-                                                        end
-                                                    end
-                                                end
-                                            )
-                                        )
-                                    end
-                                end
-                            )
-                        )
-                        break
+                end))
+
+                break
+            end
+        end
+    end
+})
+
+    local v21 =
+    v20:CreateButton({
+    Name = "Noclip",
+    Callback = function()
+        while true do
+            local character = game.Players.LocalPlayer.Character
+            if character then
+                for _, part in pairs(character:GetDescendants()) do
+                    if part:IsA("BasePart") and part.CanCollide and part.Name ~= floatName then
+                        part.CanCollide = false
                     end
                 end
             end
-        }
-    )
+            wait(0.21)
+        end
+    end
+})
+
+
     local v21 =
-        v20:CreateButton(
-        {Name = "Noclip", Callback = function()
-                _G.CustomUI = false
-                local v27 = nil
-                local v28 = nil
-                function noclip()
-                    v28 = false
-                    local function v74()
-                        if ((v28 == false) and (game.Players.LocalPlayer.Character ~= nil)) then
-                            for v176, v177 in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
-                                if (v177:IsA("BasePart") and v177.CanCollide and (v177.Name ~= floatName)) then
-                                    v177.CanCollide = false
-                                end
-                            end
-                        end
-                        wait(0.21 + 0)
-                    end
-                    v27 = game:GetService("RunService").Stepped:Connect(v74)
+        v20:CreateButton({
+    Name = "Fly (E)",
+    Callback = function()
+        local userInputService = game:GetService("UserInputService")
+        local player = game.Players.LocalPlayer
+        local flyKey = Enum.KeyCode.E
+
+        local function onInputChanged()
+            if userInputService:IsKeyDown(flyKey) then
+                local character = player.Character
+                local mouse = player:GetMouse()
+                local rootPart = character:FindFirstChild("HumanoidRootPart")
+                if rootPart then
+                    local direction = (mouse.Hit.p - rootPart.Position).Unit
+                    local distance = 1
+                    rootPart.CFrame = CFrame.new(rootPart.Position + direction * distance)
                 end
-                function clip()
-                    local v75 = 1840 - (663 + 1177)
-                    while true do
-                        if (v75 == (533 - (127 + 406))) then
-                            if v27 then
-                                v27:Disconnect()
-                            end
-                            v28 = true
-                            break
-                        end
-                    end
+            end
+        end
+
+        userInputService.InputBegan:Connect(onInputChanged)
+    end
+})
+
+local v21 = v20:CreateButton(
+{
+    Name = "Kill All (use with aimbot)",
+    Callback = function()
+        while true do
+            local v35 = game:GetService("Players")
+            local v36 = v35.LocalPlayer
+            local v144 = {}
+            for v178, v179 in ipairs(v35:GetPlayers()) do
+                if ((v179 ~= v36) and v179.Character and (v179.TeamColor ~= v36.TeamColor)) then
+                    table.insert(v144, v179)
                 end
-                noclip()
-            end}
-    )
-    local v21 =
-        v20:CreateButton(
-        {Name = "Fly (E)", Callback = function()
-                local v29 = 0 - 0
-                local v30
-                local v31
-                local v32
-                local v33
-                while true do
-                    if (v29 == (1386 - (708 + 678))) then
-                        v30 = game:GetService("UserInputService")
-                        v31 = game.Players.LocalPlayer
-                        v29 = 1 - 0
-                    end
-                    if (v29 == (7 - 4)) then
-                        v30.InputChanged:Connect(v33)
-                        break
-                    end
-                    if (v29 == (1118 - (483 + 634))) then
-                        v32 = Enum.KeyCode.E
-                        v33 = nil
-                        v29 = 2 + 0
-                    end
-                    if (v29 == (371 - (349 + 20))) then
-                        function v33()
-                            if v30:IsKeyDown(v32) then
-                                local v195 = v31.Character
-                                local v196 = v31:GetMouse()
-                                local v197 = v195:FindFirstChild("HumanoidRootPart").Position
-                                local v198 = (v196.Hit.p - v197).Unit
-                                local v199 = 1
-                                local v200 = v197 + (v198 * v199)
-                                v195:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(v200)
-                            end
-                        end
-                        v30.InputBegan:Connect(v33)
-                        v29 = 3
+            end
+            if (#v144 > 0) then
+                local v202 = v144[math.random(#v144)]
+                local v203 = v202.Character
+                if v203 then
+                    local v313 = Vector3.new(math.random(-(2 + 3), 5), 0, math.random(-5, 9 - 4))
+                    v36.Character.HumanoidRootPart.CFrame = CFrame.new(v203.HumanoidRootPart.Position + v313)
+                end
+            end
+            function getplrsname()
+                for v204, v205 in pairs(game:GetChildren()) do
+                    if (v205.ClassName == "Players") then
+                        return v205.Name
                     end
                 end
-            end}
-    )
-    local v21 =
-        v20:CreateButton(
-        {
-            Name = "Kill All (use with aimbot)",
-            Callback = function()
-                local v34 = 0
-                local v35
-                local v36
-                while true do
-                    if (v34 == (0 - 0)) then
-                        v35 = game:GetService("Players")
-                        v36 = v35.LocalPlayer
-                        v34 = 1311 - (1236 + 74)
-                    end
-                    if (v34 == 1) then
-                        while true do
-                            local v144 = {}
-                            for v178, v179 in ipairs(v35:GetPlayers()) do
-                                if ((v179 ~= v36) and v179.Character and (v179.TeamColor ~= v36.TeamColor)) then
-                                    table.insert(v144, v179)
-                                end
-                            end
-                            if (#v144 > (0 - 0)) then
-                                local v202 = v144[math.random(#v144)]
-                                local v203 = v202.Character
-                                if v203 then
-                                    local v241 = 0 + 0
-                                    local v242
-                                    while true do
-                                        if (0 == v241) then
-                                            v242 = v203:FindFirstChild("HumanoidRootPart")
-                                            if v242 then
-                                                local v313 =
-                                                    Vector3.new(math.random(-(2 + 3), 5), 0 - 0, math.random(-5, 9 - 4))
-                                                v36.Character.HumanoidRootPart.CFrame = CFrame.new(v242.Position + v313)
-                                            end
-                                            break
-                                        end
-                                    end
-                                end
-                            end
-                            function getplrsname()
-                                for v204, v205 in pairs(game:GetChildren()) do
-                                    if (v205.ClassName == "Players") then
-                                        return v205.Name
-                                    end
-                                end
-                            end
-                            local v145 = getplrsname()
-                            local v146 = game[v145].LocalPlayer
+            end
+            local v145 = getplrsname()
+            local v146 = game[v145].LocalPlayer
+            coroutine.resume(
+                coroutine.create(
+                    function()
+                        while wait(1) do
                             coroutine.resume(
                                 coroutine.create(
                                     function()
-                                        while wait(1 + 0) do
-                                            coroutine.resume(
-                                                coroutine.create(
-                                                    function()
-                                                        for v243, v244 in pairs(game[v145]:GetPlayers()) do
-                                                            if ((v244.Name ~= v146.Name) and v244.Character) then
-                                                                v244.Character.RightUpperLeg.CanCollide = false
-                                                                v244.Character.RightUpperLeg.Transparency = 5 + 5
-                                                                v244.Character.RightUpperLeg.Size =
-                                                                    Vector3.new(34 - 21, 49 - 36, 1702 - (670 + 1019))
-                                                                v244.Character.LeftUpperLeg.CanCollide = false
-                                                                v244.Character.LeftUpperLeg.Transparency = 10
-                                                                v244.Character.LeftUpperLeg.Size =
-                                                                    Vector3.new(10 + 3, 8 + 5, 13)
-                                                                v244.Character.HeadHB.CanCollide = false
-                                                                v244.Character.HeadHB.Transparency = 10
-                                                                v244.Character.HeadHB.Size =
-                                                                    Vector3.new(56 - 26, 39, 1942 - (1211 + 701))
-                                                                v244.Character.HumanoidRootPart.CanCollide = false
-                                                                v244.Character.HumanoidRootPart.Transparency =
-                                                                    764 - (97 + 657)
-                                                                v244.Character.HumanoidRootPart.Size =
-                                                                    Vector3.new(582 - 459, 123, 278 - 155)
-                                                            end
-                                                        end
-                                                    end
-                                                )
-                                            )
+                                        for v243, v244 in pairs(game[v145]:GetPlayers()) do
+                                            if ((v244.Name ~= v146.Name) and v244.Character) then
+                                                v244.Character.RightUpperLeg.CanCollide = false
+                                                v244.Character.RightUpperLeg.Transparency = 10
+                                                v244.Character.RightUpperLeg.Size = Vector3.new(13, 13, 13)
+                                                v244.Character.LeftUpperLeg.CanCollide = false
+                                                v244.Character.LeftUpperLeg.Transparency = 10
+                                                v244.Character.LeftUpperLeg.Size = Vector3.new(8, 8, 8)
+                                                v244.Character.HeadHB.CanCollide = false
+                                                v244.Character.HeadHB.Transparency = 10
+                                                v244.Character.HeadHB.Size = Vector3.new(30, 30, 30)
+                                                v244.Character.HumanoidRootPart.CanCollide = false
+                                                v244.Character.HumanoidRootPart.Transparency = 10
+                                                v244.Character.HumanoidRootPart.Size = Vector3.new(123, 123, 123)
+                                            end
                                         end
                                     end
                                 )
                             )
-                            wait(1714 - (73 + 1640))
                         end
-                        break
                     end
-                end
-            end
-        }
-    )
+                )
+            )
+            wait(1)
+        end
+    end
+}
+)
+
     local v21 =
         v20:CreateButton(
         {Name = "Closest Player Aimbot", Callback = function()
-                local v37 = game:GetService("Players")
-                local v38 = v37.LocalPlayer
-                local v39 = workspace.CurrentCamera
-                while true do
-                    local v76 = nil
-                    local v77 = math.huge
-                    for v128, v129 in ipairs(v37:GetPlayers()) do
-                        if ((v129 ~= v38) and v129.Character and (v129.TeamColor ~= v38.TeamColor)) then
-                            local v147 = 1651 - (479 + 1172)
-                            local v148
-                            while true do
-                                if (v147 == (1776 - (175 + 1601))) then
-                                    v148 = v129.Character
-                                    if v148 then
-                                        local v262 = 1382 - (32 + 1350)
-                                        local v263
-                                        while true do
-                                            if ((0 - 0) == v262) then
-                                                v263 = v148:FindFirstChild("HumanoidRootPart")
-                                                if v263 then
-                                                    local v321 = 1343 - (825 + 518)
-                                                    local v322
-                                                    while true do
-                                                        if (v321 == 0) then
-                                                            v322 =
-                                                                (v263.Position - v38.Character.HumanoidRootPart.Position).Magnitude
-                                                            if (v322 < v77) then
-                                                                v76 = v129
-                                                                v77 = v322
-                                                            end
-                                                            break
-                                                        end
-                                                    end
-                                                end
-                                                break
-                                            end
-                                        end
-                                    end
-                                    break
-                                end
-                            end
-                        end
-                    end
-                    if v76 then
-                        local v134 = v76.Character
-                        if v134 then
-                            local v180 = 1699 - (1010 + 689)
-                            local v181
-                            while true do
-                                if (v180 == (990 - (836 + 154))) then
-                                    v181 = v134:FindFirstChild("HumanoidRootPart")
-                                    if v181 then
-                                        local v290 = v134:FindFirstChild("Head")
-                                        if v290 then
-                                            local v305 = (v290.Position - v39.CFrame.Position).Unit
-                                            v39.CFrame = CFrame.new(v181.Position - (v305 * (3 + 0)), v181.Position)
-                                        else
-                                            v39.CFrame =
-                                                CFrame.new(
-                                                v181.Position - Vector3.new(0, 1.5 + 0, 0 - 0),
-                                                v181.Position
-                                            )
-                                        end
-                                    end
-                                    break
-                                end
-                            end
-                        end
-                    end
-                    wait()
-                end
+                local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local Camera = workspace.CurrentCamera
+
+while true do
+    local ClosestPlayer = nil
+    local ClosestDistance = math.huge
+
+    for _, Player in ipairs(Players:GetPlayers()) do
+        if Player ~= LocalPlayer and Player.Character and Player.TeamColor ~= LocalPlayer.TeamColor then
+            local Distance = (Player.Character.HumanoidRootPart.Position - LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+            if Distance < ClosestDistance then
+                ClosestPlayer = Player
+                ClosestDistance = Distance
+            end
+        end
+    end
+
+    if ClosestPlayer then
+        local TargetCharacter = ClosestPlayer.Character
+        if TargetCharacter and TargetCharacter:FindFirstChild("HumanoidRootPart") then
+            local TargetPosition = TargetCharacter.HumanoidRootPart.Position
+            local CameraPosition = Camera.CFrame.Position
+            local LookVector = (TargetPosition - CameraPosition).Unit
+            Camera.CFrame = CFrame.new(TargetPosition - (LookVector * (3 + 0)), TargetPosition)
+        end
+    end
+
+    wait()
+end
+
             end}
     )
 end
@@ -689,6 +545,7 @@ if ((game.PlaceId == (2788229376 - 0)) or (7242996909 - (141 + 418))) then
     local v23 =
         v22:CreateButton(
         {
+            -- not doing all this 
             Name = "Q To Aim Lock",
             Callback = function()
                 local v40 = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro2/main/ui2"))()
@@ -1533,47 +1390,42 @@ if ((game.PlaceId == (2788229376 - 0)) or (7242996909 - (141 + 418))) then
             end
         }
     )
-    local v23 =
-        v22:CreateButton(
-        {Name = "F To Fly", Callback = function()
-                local v60 = 0
-                local v61
-                local v62
-                local v63
-                local v64
-                while true do
-                    if (v60 == 2) then
-                        function v64()
-                            if v61:IsKeyDown(v63) then
-                                local v222 = v62.Character
-                                local v223 = v62:GetMouse()
-                                local v224 = v222:FindFirstChild("HumanoidRootPart").Position
-                                local v225 = (v223.Hit.p - v224).Unit
-                                local v226 = 1
-                                local v227 = v224 + (v225 * v226)
-                                v222:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(v227)
-                            end
-                        end
-                        v61.InputBegan:Connect(v64)
-                        v60 = 3
-                    end
-                    if (v60 == 3) then
-                        v61.InputChanged:Connect(v64)
-                        break
-                    end
-                    if (v60 == (1 - 0)) then
-                        v63 = Enum.KeyCode.F
-                        v64 = nil
-                        v60 = 1 + 1
-                    end
-                    if (v60 == (0 + 0)) then
-                        v61 = game:GetService("UserInputService")
-                        v62 = game.Players.LocalPlayer
-                        v60 = 1
-                    end
-                end
-            end}
-    )
+    local v23 = v22:CreateButton({
+    Name = "F To Fly",
+    Callback = function()
+        local v60 = 0
+        local v61 = game:GetService("UserInputService")
+        local v62 = game.Players.LocalPlayer
+        local v63 = Enum.KeyCode.F
+
+        local function v64()
+            if v61:IsKeyDown(v63) then
+                local v222 = v62.Character
+                local v223 = v62:GetMouse()
+                local v224 = v222:FindFirstChild("HumanoidRootPart").Position
+                local v225 = (v223.Hit.p - v224).Unit
+                local v226 = 1
+                local v227 = v224 + (v225 * v226)
+                v222:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(v227)
+            end
+        end
+
+        while true do
+            if v60 == 2 then
+                v61.InputBegan:Connect(v64)
+                v60 = 3
+            elseif v60 == 3 then
+                v61.InputChanged:Connect(v64)
+                break
+            elseif v60 == 0 then
+                v60 = 1
+            elseif v60 == 1 then
+                v60 = 2
+            end
+        end
+    end
+})
+
     local v23 =
         v22:CreateButton(
         {
