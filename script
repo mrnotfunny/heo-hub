@@ -35,7 +35,7 @@ local v1 =
         LoadingSubtitle = "Aided by Sirius",
         ConfigurationSaving = {Enabled = true, FolderName = nil, FileName = "Big Hub"},
         Discord = {Enabled = true, Invite = "CVTdeGY7gD", RememberJoins = false}, -- there discord invite
-        KeySystem = true, -- set to flase to remove the key 
+        KeySystem = false, -- set to flase to remove the key 
         KeySettings = {
             Title = "Heo Hub",
             Subtitle = "Key System",
